@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech - Dashboard</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark topo">
+        <div class="container">
+            <a class="navbar-brand">Fintech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#">
+                            Início <i class="fa-solid fa-house ms-1"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#">
+                            Planejamento <i class="fa-solid fa-calendar-check ms-1"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#">
+                            Ajuda <i class="fa-solid fa-circle-info ms-1"></i>
+                        </a>
+                    </li>
+
+                    <!-- PERFIL -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-circle-user fa-2xl"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><p class="dropdown-header">Meu Perfil</p></li>
+                            <li><a class="dropdown-item">Configurações</a></li>
+                            <li><a class="dropdown-item">Privacidade</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger">Sair</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- DASHBOARD -->
+    <main class="container my-4">
+
+        <!-- SAUDAÇÃO -->
+        <div class="card saudacao text-white mb-4">
+            <div class="card-body">
+                <h2>Olá, usuário 👋</h2>
+                <p>Bem-vindo ao seu painel financeiro</p>
+            </div>
+        </div>
+
+        <!-- SALDO -->
+        <div class="card saldo-card mb-4">
+            <div class="card-body">
+                <h3>Saldo atual</h3>
+                <span class="saldo">R$ 7.650,00 <i class="fa-solid fa-money-bill"></i></span>
+            </div>
+        </div>
+
+        <!-- ENTRADAS / SAÍDAS -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-6">
+                <div class="card card-info entrada">
+                    <div class="card-body">
+                        <h4>Entradas</h4>
+                        <p>R$ 10.000,00 <i class="fa-solid fa-circle-arrow-up"></i></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card card-info saida">
+                    <div class="card-body">
+                        <h4>Saídas</h4>
+                        <p>R$ 2.350,00 <i class="fa-solid fa-circle-arrow-down"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTÕES AÇÕES -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-6">
+                <button class="btn btn-verde w-100">+ Recebimento <i class="fa-solid fa-circle-arrow-up ms-1"></i></button>
+            </div>
+            <div class="col-md-6">
+                <button class="btn btn-vermelho w-100">+ Gasto <i class="fa-solid fa-circle-arrow-down ms-1"></i></button>
+            </div>
+        </div>
+
+        <!-- OPÇÕES -->
+        <div class="row g-3">
+            <div class="col-12"><div class="op-item">Histórico de gastos <i class="fa-solid fa-credit-card"></i></div></div>
+            <div class="col-12"><div class="op-item">Histórico de recebimentos <i class="fa-solid fa-sack-dollar"></i></div></div>
+            <div class="col-12"><div class="op-item">Extratos <i class="fa-solid fa-cash-register"></i></div></div>
+            <div class="col-12"><div class="op-item">Planejamento financeiro <i class="fa-solid fa-bullseye"></i></div></div>
+        </div>
+
+    </main>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
